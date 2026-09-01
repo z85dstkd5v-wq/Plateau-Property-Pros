@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Plateau Property Pros</title>
+
+<style>
+:root {
+  --green: #2f5d3a;
+  --dark: #1d2b20;
+  --tan: #e8dfcf;
+  --cream: #f7f4ed;
+  --gold: #b98a4b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: #263126;
+  line-height: 1.6;
+}
+
+header {
+  background: var(--dark);
+  color: white;
+  padding: 14px 5%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 1.15rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+}
+
+.hero {
+  min-height: 520px;
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    rgba(20,35,23,.70),
+    rgba(20,35,23,.70)
+  ),
+  linear-gradient(120deg,#496f4d,#a58d68);
+  color: white;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--gold);
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: .85rem;
+}
+
+h1 {
+  font-size: clamp(2.5rem,7vw,5rem);
+  line-height: 1.05;
+  margin: 18px 0;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 8px 0 0;
+}
+
+.btn.alt {
+  background: white;
+  color: var(--dark);
+}
+
+section {
+  padding: 65px 8%;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.section-title p {
+  max-width: 700px;
+ 
